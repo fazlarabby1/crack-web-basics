@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
@@ -14,8 +16,8 @@ const TopicDetails = ({topic}) => {
                     <Card.Body>
                         <h4 className='text-primary'>{name}</h4>
                         <div className='d-flex justify-content-between align-items-center'>
-                            <p>Total Question: {total}</p>
-                            <Button>Start Practice</Button>
+                            <p>Total Questions: {total}</p>
+                            <Button>Start Practice <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon> </Button>
                         </div>
                     </Card.Body>
                 </Card>
