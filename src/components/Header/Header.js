@@ -12,7 +12,7 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">
                         <Nav className="navbar">
-                            <NavLink to="/topics">Topics</NavLink>
+                            <NavLink className={({isActive}) => isActive ? 'active': undefined} to="/topics">Topics</NavLink>
                             <NavLink to="/statistics">Statistics</NavLink>
                             <NavLink to="/blog">Blog</NavLink>
                         </Nav>
