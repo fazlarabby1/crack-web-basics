@@ -7,9 +7,8 @@ import './Topics.css';
 
 const Topics = () => {
     const topics = useContext(QuizContext);
-    // console.log(quiz);
     return (
-        <div style={{marginTop: '120px'}}>
+        <div>
             <div className='container mt-5 d-flex flex-column flex-md-column flex-xl-row align-items-center'>
                 <div className='border-0 w-75 image'>
                     <img className='rounded mx-md-auto mx-sm-0 ms-0' src={basic} alt="" />

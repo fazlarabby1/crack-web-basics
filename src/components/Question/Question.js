@@ -5,7 +5,6 @@ import { toast } from 'react-toastify';
 import Option from '../Option/Option';
 
 const Question = ({ topicQuestion, index }) => {
-    console.log(topicQuestion)
     const { id, question, correctAnswer, options } = topicQuestion;
     const handleAnswerValidation = (answer) =>{
         if(answer === correctAnswer){
