@@ -16,3 +16,10 @@
     background-color: aquamarine;
     border-radius: 5px;
 }
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
