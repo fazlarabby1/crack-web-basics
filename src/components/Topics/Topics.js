@@ -7,7 +7,7 @@ import './Topics.css';
 
 const Topics = () => {
     const quiz = useContext(QuizContext);
-    console.log(quiz);
+    // console.log(quiz);
     return (
         <div style={{marginTop: '120px'}}>
             <div className='mt-5 d-flex flex-column flex-md-column flex-xl-row align-items-center'>
