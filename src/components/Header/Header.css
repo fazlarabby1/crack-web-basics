@@ -1,0 +1,13 @@
+.navbar a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-weight: 600;
+    padding: 7px;
+}
+
+.navbar a:hover{
+    background-color: antiquewhite;
+    border-radius: 5px;
+    color:coral;
+}
