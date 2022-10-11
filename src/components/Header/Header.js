@@ -9,7 +9,7 @@ const Header = () => {
             <nav className='shadow-lg'>
                 <Navbar bg="light" expand="lg">
                     <Container>
-                        <Navbar.Brand to="/">React-Bootstrap</Navbar.Brand>
+                        <Navbar.Brand className='fw-semibold text-primary' to="/">Crack-Web-Basics</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">
                             <Nav className="navbar">
