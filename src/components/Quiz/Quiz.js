@@ -20,7 +20,7 @@ const Quiz = () => {
                             </Question>)
                     }
                 </div>
-                <div className='rounded shadow quiz-result p-5 order-0 order-md-1 mb-4'>
+                <div className='rounded shadow quiz-result p-4 order-0 order-md-1 mb-4'>
                     <h1>Quiz Result</h1>
                     <p>Total Correct: </p>
                 </div>
