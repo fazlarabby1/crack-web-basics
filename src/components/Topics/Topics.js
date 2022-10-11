@@ -6,11 +6,11 @@ import Row from 'react-bootstrap/Row';
 import './Topics.css';
 
 const Topics = () => {
-    const quiz = useContext(QuizContext);
+    const topics = useContext(QuizContext);
     // console.log(quiz);
     return (
         <div style={{marginTop: '120px'}}>
-            <div className='mt-5 d-flex flex-column flex-md-column flex-xl-row align-items-center'>
+            <div className='container mt-5 d-flex flex-column flex-md-column flex-xl-row align-items-center'>
                 <div className='border-0 w-75 image'>
                     <img className='rounded mx-md-auto mx-sm-0 ms-0' src={basic} alt="" />
                 </div>
@@ -22,7 +22,7 @@ const Topics = () => {
             {
                 <Row xs={1} md={2} lg={2} xl={3} className="mt-5 mx-md-4 mx-lg-5 mx-xl-5">
                     {
-                        quiz.map(topic => <TopicDetails key={topic.id} topic={topic}></TopicDetails>)
+                        topics.map(topic => <TopicDetails key={topic.id} topic={topic}></TopicDetails>)
                     }
                 </Row>
             }
