@@ -1,17 +1,25 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
+import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Option from '../Option/Option';
+import { CorrectContext, IncorrectContext } from '../Quiz/Quiz';
 
 const Question = ({ topicQuestion, index }) => {
+    const [correct, setCorrect] = useContext(CorrectContext);
+    const [incorrect, setIncorrect] = useContext(IncorrectContext);
     const { id, question, correctAnswer, options } = topicQuestion;
+
     const handleAnswerValidation = (answer) =>{
         if(answer === correctAnswer){
-            toast.success('Your answer is correct', {autoClose: 500})
+            setCorrect(previous=> previous + 1);
+            console.log(correct);
+            toast.success('Your answer is correct', {autoClose: 500});
         }
-        else
-        toast.warning('Your answer is incorrect', {autoClose: 500})
+        else{
+            setIncorrect(previous => previous + 1);
+            toast.warning('Your answer is incorrect', {autoClose: 500})
+        }
         
     }
     const showCorrectAnswer = () =>{

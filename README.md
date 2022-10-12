@@ -12,11 +12,10 @@ Inside the blog, I have answered 3 questions that Jhankar Sir told about.
 In the topic page, I simply showed the topics as cards. Each card contains an image, the name, total questions, and a button of the topic. Then, I connected a question page with the button by setting the route dynamically. 
 
 **********
-Inside that page, there are two sections. One is the question section and the other one is the Result section. If one click any of the options of a question, then there will be a toast which will contain the validation message. There is an eye icon in the right side of the questions. 
+Inside that page, there are two sections. One is the question section and the other one is the Result section. If one click any of the options of a question, then there will be a toast which will contain the validation message. And the correct answer number will be added in the result section. However, my eventHandler is firing two times and because of that each time the results get incremented by two and also shows two toasts at the same time for clicking one option.
+
 **********
-
-By clicking that button, one will get the correct answer of that questions as a toast. However, I wasn't able to complete the result section. Because of the electricity issue, I was afraid of not being able to submit the assignment within the time. Therefore, I just completed all the main parts and made the website responsive. Sorry for the disappointment.
-
+ There is an eye icon in the right side of the questions. By clicking that button, one will get the correct answer of that questions as a toast. 
 
 
 
